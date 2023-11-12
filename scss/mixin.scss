@@ -1,0 +1,22 @@
+@import "variables";
+
+@mixin joylashtir($joylashuvX: center, $joylashuvY: center){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $joylashuvX;
+    align-items: $joylashuvY;
+}
+
+@mixin yashil_tugma{
+    background-color: $yashil;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    color: $text-color;
+}
+
+@mixin qalin_text{
+    font-weight: map-get($font-weights, qalin);
+}

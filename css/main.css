@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #272727;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+body.yutuq {
+  background-color: #28FF28;
+}
+body.yutqazish {
+  background-color: #FF0000;
+}
+body.durrang {
+  background: linear-gradient(to right, #28FF28, #FF0000);
+}
+
+.elements {
+  font-size: 150px;
+  margin: 0 auto;
+  padding: 10px;
+  color: #fff;
+  -webkit-user-select: none;
+}
+.elements:hover {
+  text-shadow: 0 0 35px #28FF28;
+}
+
+.result {
+  width: 100%;
+  font-size: 30px;
+}
+.result h1, .result h2 {
+  text-align: center;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

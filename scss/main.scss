@@ -1,0 +1,52 @@
+@import "./boshlanish.scss";
+@import "./variables.scss";
+@import "./mixin.scss";
+
+body{
+    background-color: $primary-color;
+    width: 100vw;
+    height: 100vh;
+    @include joylashtir();
+    transition: 0.5s ease-in-out;
+
+    &.yutuq{
+        background-color: $yashil;
+    }
+
+    &.yutqazish{
+        background-color: $qizil;
+    }
+
+    
+    &.durrang{
+        background: linear-gradient(to right, $yashil, $qizil);
+    }
+
+    //flex-direction: column-reverse; // display flex ichidagi elementlarni joylashuv yo'nalishini belgilaydi
+}
+
+.elements{
+    font-size: 150px;
+    margin: 0 auto;
+    padding: 10px;
+    color: $text-color;
+    
+    -webkit-user-select: none;
+
+    &:hover{
+        text-shadow: 0 0 35px $yashil;
+    }
+}
+
+.result{
+    width: 100%;
+    font-size: 30px;
+    & h1{
+        text-align: center;
+        color: $text-color;
+    }
+
+    & h2{
+        @extend h1;
+    }
+}
